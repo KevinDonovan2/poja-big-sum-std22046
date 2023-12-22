@@ -6,7 +6,7 @@ import java.math.BigInteger;
 @RestController
 public class SumController {
 
-    @GetMapping("/sum")
+    @GetMapping("/big-sum")
     public String getSum(@RequestParam("a") String a, @RequestParam("b") String b) {
         try {
             BigInteger numA = new BigInteger(a);
