@@ -1,0 +1,13 @@
+config:
+  target: 'https://ojh8t72ol9.execute-api.eu-west-3.amazonaws.com/Prod'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+
+scenarios:
+  - flow:
+      - get:
+          url: '/ping'
